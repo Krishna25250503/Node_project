@@ -1,0 +1,32 @@
+<%- include('partials/header')%>
+<!--  -->
+<%- include('partials/nav')%>
+<form class="m-auto w-25 mt-5" action="/signup" method="post">
+    <h1 class="mb-4">Sign-Up Page</h1>
+    <hr>
+    <input
+        class="form-control mb-3"
+        type="text"
+        placeholder="User Name"
+        name="username"
+    />
+    <input
+        class="form-control mb-3"
+        type="email"
+        placeholder="Email@gmail.com"
+        name="email"
+    />
+    <input
+        class="form-control mb-3"
+        type="password"
+        placeholder="********"
+        name="password"
+    />
+    <button class="btn btn-primary w-25">Sign Up</button>
+    <p>Already have an account ? <a href="/signin">signin</a></p>
+    <div class="p-3 mb-2 bg-dark text-white">
+    </div>
+
+</form>
+
+<%- include('partials/footer')%>
